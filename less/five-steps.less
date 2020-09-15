@@ -1,0 +1,46 @@
+.five-steps{
+    padding: 10rem 5rem 10rem 5rem;
+    background: url(../img/safe_image.png) center bottom no-repeat;
+    font-size: 16px;
+    .quality-assurance_galary{
+        max-width: 87rem;
+        width: 100%;
+        &_item{
+            margin-bottom: 3.5rem;
+            .title{
+                font-size: 16px;
+                margin-bottom: 1.5rem;
+            }
+            .btn{
+                transition-duration: 0.5s;
+                border: none;
+                border-bottom: 3px solid @orange-clr;
+                line-height: 1.69;
+                font-weight: bold;
+                background: none;
+                font-size: 16px;
+                font-family: 'Circe';
+                &:hover{
+                    cursor: pointer;
+                    background-color: @orange-clr;
+                    color: @white-clr;
+                }
+            }
+        }
+    }
+}
+
+.with-an-arrow-five{
+    position: relative;
+    &::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 64px;
+        height: 24px;
+        background: url(../img/right-drawn-arrow.png) center center no-repeat;
+        background-size: cover;
+        right: -65px;
+        top: 42px;
+    }
+}

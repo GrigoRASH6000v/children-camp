@@ -1,0 +1,83 @@
+.quality-assurance {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.quality-assurance_title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 auto 3rem auto;
+  max-width: 870px;
+  width: 100%;
+}
+.quality-assurance_text {
+  font-weight: bold;
+  max-width: 540px;
+  width: 100%;
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  margin: 0 auto 6rem auto;
+}
+.quality-assurance_desc {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  font-weight: bold;
+  text-align: center;
+}
+.quality-assurance_galary {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 122rem;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.quality-assurance_galary_item {
+  margin: 15px 3.2rem ;
+  width: 22.5rem;
+}
+.quality-assurance_galary_item .stage {
+  display: block;
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  margin-bottom: 3rem;
+}
+.quality-assurance_galary_item img {
+  margin-bottom: 4rem;
+}
+.quality-assurance_galary_item .title {
+  font-size: 2.0rem;
+  font-family: 'Circe';
+  margin: 0 0 2rem 0;
+}
+.quality-assurance_galary_item .desc {
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  margin: 0;
+  line-height: 2;
+}
+.with-an-arrow {
+  position: relative;
+}
+.with-an-arrow::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 24px;
+  background: url(../img/right-drawn-arrow.png) center center no-repeat;
+  background-size: cover;
+  right: -65px;
+  top: 92px;
+}

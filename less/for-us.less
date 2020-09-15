@@ -1,0 +1,104 @@
+.for-us{
+    width: 100%;
+    padding: 10rem 5rem 10rem 5rem;
+    &_title{
+        font-size: 3rem;
+        font-family: 'Roboto Slab bold';
+        max-width: 90rem;
+        width: 100%;
+        margin: 0 auto 3rem auto;
+        text-align: center;
+    }
+    &_text{
+        font-size: 2.2rem;
+        font-family: 'Circe';
+        margin: 0 auto 7rem auto;
+        text-align: center;
+    }
+    .director{
+        max-width: 117rem;
+        width: 100%;
+        margin: 0 auto 7rem auto ;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        img{
+            max-width: 594px;
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+        &_portfolio{
+            &_title{
+                font-size: 2.2rem;
+                font-family: 'Circe';
+                margin: 0 0 3rem 0;
+            }
+            &_text{
+                font-size: 1.7rem;
+                font-family: 'Circe';
+                margin: 0 0 6rem 0;
+            }
+            &_skill-list{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    position: relative;
+                    padding-left: 5.5rem;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.7rem;
+                    font-family: 'Circe';
+                    height: 2.5rem;
+                    padding-bottom: 1px;
+                    &:before{
+                        content: '';
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        top: -3px;
+                        left: 0;
+                        background: url(../img/checked.png) center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .our-team{
+        max-width: 100rem;
+        width: 100%;
+        margin: 0 auto;
+        &_title{
+            margin: 0 0 7rem 0;
+            font-family: 'Circe';
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        &_galary{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            &_item{
+                margin: 15px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 300px;
+                &_desc{
+                    h4{
+                        margin: 0 0 2rem 0;
+                        font-size: 1.6rem;
+                        font-family: 'Circe';
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 1.4rem;
+                        font-family: 'Circe';
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}

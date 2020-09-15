@@ -1,0 +1,91 @@
+.progress{
+    text-align: center;
+    width: 100%;
+    padding: 10rem 10% 10rem 10%;
+    &_title{
+        text-align: center;
+        max-width: 82.5rem;
+        width: 100%;
+        font-size: 3rem;
+        font-family: 'Roboto Slab bold';
+        margin: 0 auto 6rem auto;
+    }
+    &_desc{
+        font-size: 2.2rem;
+        font-family: 'Circe';
+        margin: 0 0 6rem 0;
+    }
+    .federal-level{
+        margin-bottom: 6rem;
+    }
+    .parants{
+        .name,
+        .year,
+        .camp{
+            padding: 0 5rem;
+            font-size: 1.4rem;
+            display: block;
+            width: 100%;
+            font-family: 'Circe';
+        }
+        .name{
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.federal-level,
+.parants{
+    .slider-btn{
+        width: 2.5rem;
+        height: 4rem;
+        outline:none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        cursor: pointer;
+    }
+    .prev-btn{
+        left: -7.5rem;
+        background: url(../img/left-arrow.svg) center center no-repeat;
+        background-size: cover;
+    }
+    .next-btn{
+        right: -7.5rem;
+        background: url(../img/right-arrow.svg) center center no-repeat;
+        background-size: cover;
+    }
+    .slick-list{
+        max-width: 1000px;
+        width: 100%;
+    }
+    max-width: 970px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.progress_slider_block{
+    text-align: center;
+    .element{
+        margin: 0 auto;
+        width: 270px;
+        height: 350px;
+        background-color: @light-blue;
+        padding-bottom: 10px;
+        .name,
+        .camp,
+        .year{
+            margin: 0;
+        }
+    }
+    .slider-img{
+        display: block;
+        margin: 0 auto;
+        width: 270px;
+        height: 294px;
+    }
+    
+}

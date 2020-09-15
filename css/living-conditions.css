@@ -1,0 +1,53 @@
+.living-conditions {
+  width: 100%;
+  padding: 10rem 5rem 0 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+}
+.living-conditions_galary {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.living-conditions_galary_item {
+  margin-bottom: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+.living-conditions_galary_item .item-img {
+  margin-right: 3rem;
+}
+.living-conditions_galary_item .item-description_title {
+  margin: 0 0 3rem 0;
+  font-size: 2.2rem;
+  font-family: 'Circe';
+}
+.living-conditions_galary_item .item-description_text {
+  margin: 0 0 0 0;
+  font-size: 1.7rem;
+  font-family: 'Circe';
+}
+.living-conditions_title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  text-align: center;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto 10rem auto;
+}

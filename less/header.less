@@ -1,0 +1,73 @@
+.btn(@wd, @ht,){
+    outline: none;
+    transition-duration: 0.3s;
+    border: none;
+    width: @wd;
+    height: @ht;
+    background-color: @orange-clr;
+    border-radius: @ht/2;
+    font-family: 'Circe';
+    font-size: 1.1rem;
+    color: @white-clr;
+    cursor: pointer;
+    &:hover{
+        background-color: darken(@orange-clr, 20%);
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.header{
+    padding: 0 5rem;
+    max-width: 117rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 15px;
+            font-family: 'Circe';
+            margin-left: 3rem;
+
+        }
+    }
+    &-contacts{
+        &-btn{
+            .btn(17rem, 4.5rem,)
+        }
+        display: flex;
+        align-items: center;
+        .number-wrp{
+            width: 16rem;
+            margin-right: 3rem;
+            span{
+                display: block;
+                margin: 0 auto 0.6rem auto;
+                text-align: center;
+            }
+            .header-contacts-questions {
+                height: 11px;
+                font-family: 'Circe';
+                font-size: 13px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: @black-fonts;
+            }
+            .header-contacts-number{
+                font-family: 'Roboto Slab bold';
+                font-size: 1.7rem;
+                color: @black-fonts;
+            }
+            
+        }
+    }
+}    
+

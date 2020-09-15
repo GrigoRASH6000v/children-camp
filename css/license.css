@@ -1,0 +1,42 @@
+.license {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+}
+.license_title {
+  text-align: center;
+  max-width: 78.5rem;
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 auto 10rem auto;
+}
+.license_galary {
+  max-width: 97rem;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.license_galary_item {
+  margin: 20px;
+  text-align: center;
+  width: 27rem;
+}
+.license_galary_item_img {
+  margin-bottom: 3rem;
+  max-width: 270px;
+  width: 100%;
+}
+.license_galary_item_desc {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+}

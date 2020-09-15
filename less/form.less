@@ -1,0 +1,109 @@
+.form-section{
+    padding: 10rem 5rem;
+    text-align: center;
+    width: 100%;
+    min-height: 58rem;
+    background: url('../img/background-form.jpg') center center no-repeat;
+    background-size: cover;
+    &-title{
+        margin: 0 0 3rem 0;
+        font-size: 3rem;
+        font-family: 'Roboto Slab bold';
+    }
+    &-description{
+        display: block;
+        font-family: 'Circe';
+        color: @black-fonts;
+        font-size: 2.2rem;
+        margin-bottom: 13rem;
+        font-weight: bold;
+    }
+}
+
+.form{
+    text-align: center;
+    max-width: 91rem;
+    width: 100%;
+    margin: 0 auto;
+    legend{
+        font-family: 'Circe';
+        font-size: 1.6rem;
+        display: block;
+        max-width: 490px;
+        width: 100%;
+        margin: 0 auto 4rem auto;
+        line-height: 1.69;
+    }
+    input{
+        font-family: 'Circe';
+        font-size: 1.5rem;
+        max-width: 27rem;
+        width: 100%;
+        height: 5.5rem;
+        border-radius: 2.75rem;
+        outline: none;
+        border: 1px solid @gray-clr;
+        margin: 10px 15px 10px 15px;
+        padding: 0 0 0 6.1rem;
+    }
+    .input-name{
+        background: url('../img/avatar-name.png') no-repeat;
+        background-color: white;
+        background-position: 3.5rem 1.6rem;
+    }
+    .input-phone{
+        background: url('../img/telephone.png') no-repeat;
+        background-color: white;
+        background-position: 3.5rem 1.6rem;
+    }
+
+    input[type="submit"]{
+        transition-duration: 0.3s;
+        background-color: @orange-clr;
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+        font-family: 'Circe';
+        color: white;
+        text-transform: uppercase;
+        line-height: 5.5rem;
+        &:hover{
+            background-color: darken(@orange-clr, 20%);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+    .form_signature{
+        margin-top: 4.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+   
+    p{
+        
+        font-size: 1.6rem;
+        font-family: 'Circe';
+    }
+    span{
+        margin-left: 7rem;
+        position: relative;
+        font-family: 'Roboto Slab bold';
+        font-size: 2rem;
+        &::before{
+            top: -5px;
+            left: -4rem;
+            position: absolute;
+            display: inline-block;
+            content: '';
+            width: 3rem;
+            height: 3rem;
+            background: url('../img/mobile-phone-2.png') center center no-repeat;
+            background-size: cover;
+        }
+    }
+}

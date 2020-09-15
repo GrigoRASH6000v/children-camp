@@ -1,0 +1,39 @@
+.header {
+  max-width: 93rem;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-contacts {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-contacts .number-wrp {
+  width: 14.5rem;
+}
+.header-contacts .number-wrp span {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.header-contacts .number-wrp .header-contacts-questions {
+  height: 11px;
+  font-family: 'Circe';
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #001e28;
+}
+.header-contacts .number-wrp .header-contacts-number {
+  font-family: 'Roboto Slab bold';
+  font-size: 1.7rem;
+}

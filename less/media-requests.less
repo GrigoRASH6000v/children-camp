@@ -1,0 +1,84 @@
+@media screen and (max-width: 1600px){
+    .contacts{
+        flex-wrap: wrap;
+        .contacts_block{
+            max-width: 100%
+        }
+        .map{
+            height: 40rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .specialOffer{
+        background-image: none;
+        
+    }
+}
+
+@media screen and (max-width: 700px){
+    *{
+        font-size: 8px;
+    }
+    .prev-btn{
+        left: 0 !important;
+        z-index: 2;
+    }
+    .next-btn{
+        right: 0 !important;
+        z-index: 2;
+    }
+    .header{
+        .logo-block{
+            p{
+                display: none;
+            }
+        }
+        &-contacts{
+            &-btn{
+                width: 4.5rem;
+                border-radius: 50%;
+                background: url(../img/phone.png) center center no-repeat;
+                background-size: 2.5rem;
+                background-color: @orange-clr;
+            }
+            .number-wrp{
+                .header-contacts-questions {
+                   display: none;
+                }
+                
+            }
+        }
+    }
+    .catalogue-of-tours-controls{
+        flex-wrap: wrap;
+        border-bottom: none;
+        justify-content: center;
+        button{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 542px){
+    .with-an-arrow::after{
+        display: none;
+    }
+    
+    .with-an-arrow-five::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px){
+    *{
+        font-size: 7px;
+    }
+    .progress{
+        padding: 10rem 20px 10rem 20px;
+    }
+    .form-wrp .form input{
+        max-width: 23rem;
+    }
+}

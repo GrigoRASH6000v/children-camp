@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular/Circe-Regular.woff2') format('woff2'), url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Slab bold';
+  src: url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff2') format('woff2'), url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

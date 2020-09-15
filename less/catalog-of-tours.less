@@ -1,0 +1,160 @@
+.catalogue-of-tours{
+    padding: 10rem 5rem 10rem 5rem;
+    width: 100%;
+    text-align: center;
+    &-title{
+        margin: 0 0 3rem 0;
+        font-size: 3rem;
+        font-family: 'Roboto Slab bold';
+    }
+    &-description{
+        font-size: 2.2rem;
+        font-family: 'Circe';
+        display: block;
+        margin: 0 auto;
+    }
+    &-controls{
+        display: flex;
+        justify-content: space-between;
+        max-width: 117rem;
+        width: 100%;
+        border-bottom: 5px solid @orange-clr;
+        margin: 7rem auto 4rem auto;
+        button{
+            transition-duration: 0.3s;
+            cursor: pointer;
+            outline: none;
+            max-width: 37rem;
+            width: 100%;
+            height: 7.7rem;
+            margin-right: 5px;
+            background-color: @light-blue;
+            border-radius: 2rem 2rem 0 0;
+            border: none;
+            font-size: 1.8rem;
+            font-family: 'Circe';
+            color: @black-fonts;
+            font-weight: bold;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                background-color: darken(@orange-clr, 20%);
+                
+            }
+            &:active{
+                transform: scale(0.95);
+            }
+        }
+        .btn-active{
+            background-color: @orange-clr;
+            color: @white-clr;
+        }
+    }
+    &-galary{
+        max-width: 117rem;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-item{
+            margin: 10px;
+            transition-duration: 0.3s;
+            padding: 15px 15px 30px 15px;
+            width: 37rem;
+            
+            border: 2px solid @light-blue;
+            &:hover{
+                border-color: @orange-clr;
+            }
+            &:nth-child(1) .photo-content{
+                background: url('../img/photo-content.png') no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &:nth-child(2) .photo-content{
+                background: url('../img/photo-content-2.png') no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &:nth-child(3) .photo-content{
+                background: url('../img/photo-content-3.png') no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .photo-content{
+                display: flex;
+                align-items: flex-end;
+                width: 100%;
+                height: 24.5rem;
+                .characteristics{
+                    padding: 1.4rem;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    background: linear-gradient(0deg, black, transparent);
+                    width: 100%;
+                    height: 5rem;
+                    .place,
+                    .age{
+                        font-size: 1.3rem;
+                        font-family: 'Circe';
+                        color: @white-clr;
+                        margin-bottom: 0;
+                        display: inline-block;
+                    }
+                    .place{
+                        position: relative;
+                        margin-left: 2rem;
+                        &:before{
+                            top: -0.5rem;
+                            left: -2.5rem;
+                            position: absolute;
+                            display: inline-block;
+                            content: '';
+                            width: 16px;
+                            height: 20px;
+                            background: url(../img/label.png);
+                        }
+                    }
+                    .age{
+                        position: relative;
+                        &:before{
+                            top: -0.5rem;
+                            left: -3rem;
+                            position: absolute;
+                            display: inline-block;
+                            content: '';
+                            width: 2rem;
+                            height: 2rem;
+                            background: url(../img/user.png);
+                        }
+                    }
+                }
+            }
+            h3{
+                font-size: 1.8rem;
+                font-family: 'Circe';
+            }
+            span{
+                font-size: 1.4rem;
+                display: block;
+                margin-bottom: 3rem;
+            }
+            a{
+                font-family: 'Circe';
+                color: @black-fonts;
+                font-size: 1.8rem;
+                text-decoration: none;
+                font-weight: bold;
+                border-bottom: 6px solid @orange-clr;
+                &:hover{
+                    transition-duration: 0.8s;
+                    border-bottom: 6px solid @orange-clr;
+                    background-color: @orange-clr;
+                }
+            }
+        }
+    }
+}

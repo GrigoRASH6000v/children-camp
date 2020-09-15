@@ -1,0 +1,1091 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular/Circe-Regular.woff2') format('woff2'), url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Slab bold';
+  src: url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff2') format('woff2'), url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+.container {
+  max-width: 1924px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  padding: 0 5rem;
+  max-width: 117rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header .logo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo-block p {
+  font-size: 15px;
+  font-family: 'Circe';
+  margin-left: 3rem;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.header-contacts-btn {
+  outline: none;
+  transition-duration: 0.3s;
+  border: none;
+  width: 17rem;
+  height: 4.5rem;
+  background-color: #ffaf02;
+  border-radius: 2.25rem;
+  font-family: 'Circe';
+  font-size: 1.1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header-contacts-btn:hover {
+  background-color: #9b6a00;
+}
+.header-contacts-btn:active {
+  transform: scale(0.95);
+}
+.header-contacts .number-wrp {
+  width: 16rem;
+  margin-right: 3rem;
+}
+.header-contacts .number-wrp span {
+  display: block;
+  margin: 0 auto 0.6rem auto;
+  text-align: center;
+}
+.header-contacts .number-wrp .header-contacts-questions {
+  height: 11px;
+  font-family: 'Circe';
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #001e28;
+}
+.header-contacts .number-wrp .header-contacts-number {
+  font-family: 'Roboto Slab bold';
+  font-size: 1.7rem;
+  color: #001e28;
+}
+.promo {
+  padding: 10rem 5rem 10rem 5rem;
+  width: 100%;
+  background: url('../img/background-promo.jpg') center center no-repeat;
+  background-size: cover;
+}
+.promo-wrp {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+.promo-wrp h1 {
+  margin: 0 0 3.5rem 0;
+  font-size: 5.7rem;
+  font-weight: bold;
+  color: #001e28;
+  font-family: 'Roboto Slab bold';
+}
+.promo-wrp .promo-description {
+  max-width: 46rem;
+  width: 100%;
+  margin: 0 0 8rem 0;
+  font-family: 'Roboto Slab bold';
+  font-size: 3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #001e28;
+}
+.promo-wrp .promo-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 55rem;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+.promo-wrp .promo-list-item img {
+  margin-right: 2.7rem;
+}
+.promo-wrp .promo-list-item .promo-list-item-desc {
+  text-align: left;
+}
+.promo-wrp .promo-list-item .promo-list-item-desc p {
+  margin: 0 0 1.1rem 0;
+  font-family: 'Circe';
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #001e28;
+  line-height: 1.22;
+}
+.promo-wrp .promo-list-item .promo-list-item-desc span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: 'Circe';
+}
+.form-section {
+  padding: 10rem 5rem;
+  text-align: center;
+  width: 100%;
+  min-height: 58rem;
+  background: url('../img/background-form.jpg') center center no-repeat;
+  background-size: cover;
+}
+.form-section-title {
+  margin: 0 0 3rem 0;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+}
+.form-section-description {
+  display: block;
+  font-family: 'Circe';
+  color: #001e28;
+  font-size: 2.2rem;
+  margin-bottom: 13rem;
+  font-weight: bold;
+}
+.form {
+  text-align: center;
+  max-width: 91rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.form legend {
+  font-family: 'Circe';
+  font-size: 1.6rem;
+  display: block;
+  max-width: 490px;
+  width: 100%;
+  margin: 0 auto 4rem auto;
+  line-height: 1.69;
+}
+.form input {
+  font-family: 'Circe';
+  font-size: 1.5rem;
+  max-width: 27rem;
+  width: 100%;
+  height: 5.5rem;
+  border-radius: 2.75rem;
+  outline: none;
+  border: 1px solid #d1d1d1;
+  margin: 10px 15px 10px 15px;
+  padding: 0 0 0 6.1rem;
+}
+.form .input-name {
+  background: url('../img/avatar-name.png') no-repeat;
+  background-color: white;
+  background-position: 3.5rem 1.6rem;
+}
+.form .input-phone {
+  background: url('../img/telephone.png') no-repeat;
+  background-color: white;
+  background-position: 3.5rem 1.6rem;
+}
+.form input[type="submit"] {
+  transition-duration: 0.3s;
+  background-color: #ffaf02;
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  color: white;
+  text-transform: uppercase;
+  line-height: 5.5rem;
+}
+.form input[type="submit"]:hover {
+  background-color: #9b6a00;
+}
+.form input[type="submit"]:active {
+  transform: scale(0.95);
+}
+.form .form_signature {
+  margin-top: 4.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form p {
+  font-size: 1.6rem;
+  font-family: 'Circe';
+}
+.form span {
+  margin-left: 7rem;
+  position: relative;
+  font-family: 'Roboto Slab bold';
+  font-size: 2rem;
+}
+.form span::before {
+  top: -5px;
+  left: -4rem;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  background: url('../img/mobile-phone-2.png') center center no-repeat;
+  background-size: cover;
+}
+.catalogue-of-tours {
+  padding: 10rem 5rem 10rem 5rem;
+  width: 100%;
+  text-align: center;
+}
+.catalogue-of-tours-title {
+  margin: 0 0 3rem 0;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+}
+.catalogue-of-tours-description {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  display: block;
+  margin: 0 auto;
+}
+.catalogue-of-tours-controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 117rem;
+  width: 100%;
+  border-bottom: 5px solid #ffaf02;
+  margin: 7rem auto 4rem auto;
+}
+.catalogue-of-tours-controls button {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  outline: none;
+  max-width: 37rem;
+  width: 100%;
+  height: 7.7rem;
+  margin-right: 5px;
+  background-color: #cce9e6;
+  border-radius: 2rem 2rem 0 0;
+  border: none;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+  color: #001e28;
+  font-weight: bold;
+}
+.catalogue-of-tours-controls button:last-child {
+  margin-right: 0;
+}
+.catalogue-of-tours-controls button:hover {
+  background-color: #9b6a00;
+}
+.catalogue-of-tours-controls button:active {
+  transform: scale(0.95);
+}
+.catalogue-of-tours-controls .btn-active {
+  background-color: #ffaf02;
+  color: #ffffff;
+}
+.catalogue-of-tours-galary {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalogue-of-tours-galary-item {
+  margin: 10px;
+  transition-duration: 0.3s;
+  padding: 15px 15px 30px 15px;
+  width: 37rem;
+  border: 2px solid #cce9e6;
+}
+.catalogue-of-tours-galary-item:hover {
+  border-color: #ffaf02;
+}
+.catalogue-of-tours-galary-item:nth-child(1) .photo-content {
+  background: url('../img/photo-content.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalogue-of-tours-galary-item:nth-child(2) .photo-content {
+  background: url('../img/photo-content-2.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalogue-of-tours-galary-item:nth-child(3) .photo-content {
+  background: url('../img/photo-content-3.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalogue-of-tours-galary-item .photo-content {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 24.5rem;
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics {
+  padding: 1.4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: linear-gradient(0deg, #000000, transparent);
+  width: 100%;
+  height: 5rem;
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics .place,
+.catalogue-of-tours-galary-item .photo-content .characteristics .age {
+  font-size: 1.3rem;
+  font-family: 'Circe';
+  color: #ffffff;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics .place {
+  position: relative;
+  margin-left: 2rem;
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics .place:before {
+  top: -0.5rem;
+  left: -2.5rem;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 20px;
+  background: url(../img/label.png);
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics .age {
+  position: relative;
+}
+.catalogue-of-tours-galary-item .photo-content .characteristics .age:before {
+  top: -0.5rem;
+  left: -3rem;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/user.png);
+}
+.catalogue-of-tours-galary-item h3 {
+  font-size: 1.8rem;
+  font-family: 'Circe';
+}
+.catalogue-of-tours-galary-item span {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 3rem;
+}
+.catalogue-of-tours-galary-item a {
+  font-family: 'Circe';
+  color: #001e28;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 6px solid #ffaf02;
+}
+.catalogue-of-tours-galary-item a:hover {
+  transition-duration: 0.8s;
+  border-bottom: 6px solid #ffaf02;
+  background-color: #ffaf02;
+}
+.special-offer {
+  text-align: center;
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+}
+.special-offer_title {
+  font-family: 'Roboto Slab bold';
+  font-size: 3rem;
+}
+.special-offer_description {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  line-height: 1.86;
+  max-width: 622px;
+  width: 100%;
+  margin: 0 auto 8rem auto;
+}
+.special-offer_description span {
+  padding: 1rem;
+  background-color: #ffaf02;
+  color: #ffffff;
+  font-size: inherit;
+}
+.special-offer_galary {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto 7rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.special-offer_galary .galary_image {
+  margin: 1.5rem;
+}
+.special-offer .advantages {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto 7rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.special-offer .advantages_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33rem;
+  margin: 2rem 1rem;
+}
+.special-offer .advantages_block p {
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-family: 'Circe';
+  text-align: left;
+}
+.form-wrp {
+  padding: 7rem 10px;
+  max-width: 117rem;
+  width: 100%;
+  border: 1rem solid #cce9e6;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.form-wrp .form_title {
+  font-family: 'Circe';
+  font-size: 2.2rem;
+  text-align: center;
+}
+.specialOffer {
+  background: url(../img/support-woman.png) no-repeat;
+  background-position: right 2rem;
+  background-color: #ffffff;
+}
+.social-support {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+}
+.social-support_description {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto 7rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-support_description img {
+  max-width: 581px;
+  width: 100%;
+  order: 1;
+  margin-bottom: 3rem;
+}
+.social-support_description .description_text {
+  max-width: 580px;
+  width: 100%;
+  order: 2;
+}
+.social-support_description .description_text_title {
+  margin: 0 0 7rem 0;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+}
+.social-support_description .description_text p {
+  margin: 0 0 7rem 0;
+  font-size: 2rem;
+  font-family: 'Circe';
+}
+.social-support_description .description_text h3 {
+  margin: 0 0 2.6rem 0;
+  font-size: 2.2rem;
+  font-family: 'Circe';
+}
+.socialSupport {
+  background: url(../img/mail.png) no-repeat;
+  background-position: right bottom;
+  background-color: #ffffff;
+  background-size: 25%;
+}
+.living-conditions {
+  width: 100%;
+  padding: 10rem 5rem 0 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+}
+.living-conditions_galary {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.living-conditions_galary_item {
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+}
+.living-conditions_galary_item .item-img {
+  margin-right: 3rem;
+}
+.living-conditions_galary_item .item-description_title {
+  margin: 0 0 3rem 0;
+  font-size: 2.2rem;
+  font-family: 'Circe';
+}
+.living-conditions_galary_item .item-description_text {
+  margin: 0 0 0 0;
+  font-size: 1.7rem;
+  font-family: 'Circe';
+}
+.living-conditions_title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  text-align: center;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto 10rem auto;
+}
+.for-us {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+}
+.for-us_title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+.for-us_text {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  margin: 0 auto 7rem auto;
+  text-align: center;
+}
+.for-us .director {
+  max-width: 117rem;
+  width: 100%;
+  margin: 0 auto 7rem auto ;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.for-us .director img {
+  max-width: 594px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.for-us .director_portfolio_title {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  margin: 0 0 3rem 0;
+}
+.for-us .director_portfolio_text {
+  font-size: 1.7rem;
+  font-family: 'Circe';
+  margin: 0 0 6rem 0;
+}
+.for-us .director_portfolio_skill-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.for-us .director_portfolio_skill-list li {
+  position: relative;
+  padding-left: 5.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-family: 'Circe';
+  height: 2.5rem;
+  padding-bottom: 1px;
+}
+.for-us .director_portfolio_skill-list li:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: url(../img/checked.png) center center no-repeat;
+}
+.for-us .our-team {
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.for-us .our-team_title {
+  margin: 0 0 7rem 0;
+  font-family: 'Circe';
+  font-size: 2.2rem;
+  text-align: center;
+}
+.for-us .our-team_galary {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.for-us .our-team_galary_item {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.for-us .our-team_galary_item_desc h4 {
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  font-family: 'Circe';
+}
+.for-us .our-team_galary_item_desc p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: 'Circe';
+  width: 15rem;
+}
+.quality-assurance {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.quality-assurance_title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 auto 3rem auto;
+  max-width: 870px;
+  width: 100%;
+}
+.quality-assurance_text {
+  font-weight: bold;
+  max-width: 540px;
+  width: 100%;
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  margin: 0 auto 6rem auto;
+}
+.quality-assurance_desc {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  font-weight: bold;
+  text-align: center;
+}
+.quality-assurance_galary {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 122rem;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  align-items: flex-start;
+}
+.quality-assurance_galary_item {
+  margin: 15px 3.2rem ;
+  width: 22.5rem;
+}
+.quality-assurance_galary_item .stage {
+  display: block;
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  margin-bottom: 3rem;
+}
+.quality-assurance_galary_item img {
+  margin-bottom: 4rem;
+}
+.quality-assurance_galary_item .title {
+  font-size: 2.0rem;
+  font-family: 'Circe';
+  margin: 0 0 2rem 0;
+}
+.quality-assurance_galary_item .desc {
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  margin: 0;
+  line-height: 2;
+}
+.with-an-arrow {
+  position: relative;
+}
+.with-an-arrow::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 24px;
+  background: url(../img/right-drawn-arrow.png) center center no-repeat;
+  background-size: cover;
+  right: -65px;
+  top: 92px;
+}
+.photo-galary {
+  width: 100%;
+}
+.five-steps {
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/safe_image.png) center bottom no-repeat;
+  font-size: 16px;
+}
+.five-steps .quality-assurance_galary {
+  max-width: 87rem;
+  width: 100%;
+}
+.five-steps .quality-assurance_galary_item {
+  margin-bottom: 3.5rem;
+}
+.five-steps .quality-assurance_galary_item .title {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+.five-steps .quality-assurance_galary_item .btn {
+  transition-duration: 0.5s;
+  border: none;
+  border-bottom: 3px solid #ffaf02;
+  line-height: 1.69;
+  font-weight: bold;
+  background: none;
+  font-size: 16px;
+  font-family: 'Circe';
+}
+.five-steps .quality-assurance_galary_item .btn:hover {
+  cursor: pointer;
+  background-color: #ffaf02;
+  color: #ffffff;
+}
+.with-an-arrow-five {
+  position: relative;
+}
+.with-an-arrow-five::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 24px;
+  background: url(../img/right-drawn-arrow.png) center center no-repeat;
+  background-size: cover;
+  right: -65px;
+  top: 42px;
+}
+.license {
+  width: 100%;
+  padding: 10rem 5rem 10rem 5rem;
+  background: url(../img/special-offer-background.png) center center no-repeat;
+  background-size: cover;
+}
+.license_title {
+  text-align: center;
+  max-width: 78.5rem;
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 auto 10rem auto;
+}
+.license_galary {
+  max-width: 97rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.license_galary_item {
+  margin: 20px;
+  text-align: center;
+  width: 27rem;
+}
+.license_galary_item_img {
+  margin-bottom: 3rem;
+  max-width: 270px;
+  width: 100%;
+}
+.license_galary_item_desc {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+}
+.progress {
+  text-align: center;
+  width: 100%;
+  padding: 10rem 10% 10rem 10%;
+}
+.progress_title {
+  text-align: center;
+  max-width: 82.5rem;
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 auto 6rem auto;
+}
+.progress_desc {
+  font-size: 2.2rem;
+  font-family: 'Circe';
+  margin: 0 0 6rem 0;
+}
+.progress .federal-level {
+  margin-bottom: 6rem;
+}
+.progress .parants .name,
+.progress .parants .year,
+.progress .parants .camp {
+  padding: 0 5rem;
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+  font-family: 'Circe';
+}
+.progress .parants .name {
+  font-weight: bold;
+}
+.federal-level,
+.parants {
+  max-width: 970px;
+  width: 100%;
+  margin: auto;
+}
+.federal-level .slider-btn,
+.parants .slider-btn {
+  width: 2.5rem;
+  height: 4rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+}
+.federal-level .prev-btn,
+.parants .prev-btn {
+  left: -7.5rem;
+  background: url(../img/left-arrow.svg) center center no-repeat;
+  background-size: cover;
+}
+.federal-level .next-btn,
+.parants .next-btn {
+  right: -7.5rem;
+  background: url(../img/right-arrow.svg) center center no-repeat;
+  background-size: cover;
+}
+.federal-level .slick-list,
+.parants .slick-list {
+  max-width: 1000px;
+  width: 100%;
+}
+.progress_slider_block {
+  text-align: center;
+}
+.progress_slider_block .element {
+  margin: 0 auto;
+  width: 270px;
+  height: 350px;
+  background-color: #cce9e6;
+  padding-bottom: 10px;
+}
+.progress_slider_block .element .name,
+.progress_slider_block .element .camp,
+.progress_slider_block .element .year {
+  margin: 0;
+}
+.progress_slider_block .slider-img {
+  display: block;
+  margin: 0 auto;
+  width: 270px;
+  height: 294px;
+}
+.contacts {
+  width: 100%;
+  padding: 10rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.contacts .map {
+  max-width: 1920px;
+  width: 100%;
+}
+.contacts_block {
+  padding: 9rem 10rem 9rem 10rem;
+  max-width: 92.5rem;
+  width: 100%;
+  background: url(../img/special-offer-background.png) center no-repeat;
+  background-size: cover;
+}
+.contacts_block_title {
+  max-width: 565px;
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Roboto Slab bold';
+  margin: 0 0 5rem 0;
+}
+.contacts_block_adress {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+  margin: 0 0 3rem 0;
+}
+.contacts_block_operating-mode {
+  display: block;
+  color: #007ca5;
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  margin: 0 0 2rem 0;
+}
+.contacts_block_time {
+  display: block;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+  margin: 0 0 4rem 0;
+}
+.contacts_block_contact {
+  display: block;
+  font-size: 1.5rem;
+  font-family: 'Circe';
+  color: #007ca5;
+  margin: 0 0 2rem 0;
+}
+.contacts_block_phone {
+  display: block;
+  font-family: 'Circe';
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 3rem 0;
+}
+.contacts_block_mail-title {
+  margin: 0 0 4rem 0;
+}
+.contacts_block_mail-title,
+.contacts_block_mail {
+  display: block;
+  font-size: 1.8rem;
+  font-family: 'Circe';
+}
+.hidden {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.modal {
+  z-index: 5;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.modal .form-wrp {
+  position: relative;
+}
+.modal .modal-close {
+  transition: color 0.2s ease-in;
+  font-size: 28px;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffaf02;
+}
+.modal .modal-close:hover {
+  color: #cce9e6;
+}
+@media screen and (max-width: 1600px) {
+  .contacts {
+    flex-wrap: wrap;
+  }
+  .contacts .contacts_block {
+    max-width: 100%;
+  }
+  .contacts .map {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .specialOffer {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  * {
+    font-size: 8px;
+  }
+  .prev-btn {
+    left: 0 !important;
+    z-index: 2;
+  }
+  .next-btn {
+    right: 0 !important;
+    z-index: 2;
+  }
+  .header .logo-block p {
+    display: none;
+  }
+  .header-contacts-btn {
+    width: 4.5rem;
+    border-radius: 50%;
+    background: url(../img/phone.png) center center no-repeat;
+    background-size: 2.5rem;
+    background-color: #ffaf02;
+  }
+  .header-contacts .number-wrp .header-contacts-questions {
+    display: none;
+  }
+  .catalogue-of-tours-controls {
+    flex-wrap: wrap;
+    border-bottom: none;
+    justify-content: center;
+  }
+  .catalogue-of-tours-controls button {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 542px) {
+  .with-an-arrow::after {
+    display: none;
+  }
+  .with-an-arrow-five::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  * {
+    font-size: 7px;
+  }
+  .progress {
+    padding: 10rem 20px 10rem 20px;
+  }
+  .form-wrp .form input {
+    max-width: 23rem;
+  }
+}

@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    padding:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-logo{
+        height: 7rem;
+        margin-right: 6rem;
+        cursor: pointer;
+        svg{
+            transition-duration: 0.3s;
+            height:100%;
+            fill: @test;
+            &:hover{
+                fill: lighten(@basic-clr, 40%);
+            }
+        }
+    }
+    span{
+        .font-settings(1.7rem, 500, lighten(@basic-clr, 20%));
+        font-family: 'Montserrat';
+    }
+}
+
+
